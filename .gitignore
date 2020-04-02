@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/coutcerr_demo/*.cbp
+/coutcerr_demo/*.depend
+/coutcerr_demo/*.layout
