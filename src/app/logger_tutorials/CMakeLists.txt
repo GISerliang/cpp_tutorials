@@ -1,0 +1,24 @@
+﻿IF (CMAKE_BUILD_TYPE MATCHES "Debug")
+  ADD_DEFINITIONS(-DDEBUG)
+ENDIF ()
+
+#ADD_DEFINITIONS(-DTHREADSAFE)
+
+SET(LIBRARY_OUTPUT_PATH ${OUTPUT_DIR})
+
+SET(EXECUTABLE_OUTPUT_PATH ${OUTPUT_DIR})
+
+SET(APP_HDRS
+  include/logger.h
+  include/noncopyable.h
+  )
+
+SET(APP_SRCS
+  src/logger.cpp
+  )
+
+INCLUDE_DIRECTORIES(
+  include/
+  )
+
+ADD_EXECUTABLE(logger_tutorials ${APP_SRCS} ${APP_HDRS} main.cpp)
