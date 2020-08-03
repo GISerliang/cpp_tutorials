@@ -1,2 +1,2 @@
-# cpp_demo
-CPP/Qt Study Demo
+# cpp_tutorials
+C++/Qt Tutorials
